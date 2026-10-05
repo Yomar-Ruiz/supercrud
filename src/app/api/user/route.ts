@@ -16,7 +16,7 @@ export async function POST(request: Request){
         name: body.name,
         email: body.email
     })
-    .returning
+    .returning()
 
     return Response.json(newUser)
 }
